@@ -23,7 +23,7 @@ public  abstract class figura {
     public void setEsRelleno(boolean esRelleno) {
         this.esRelleno = esRelleno;
     }
-    public abstract void obtenerArea ();
+    public abstract double obtenerArea ();
 
-    public abstract boolean obtenerPerimetro();
+    public abstract double obtenerPerimetro();
 }

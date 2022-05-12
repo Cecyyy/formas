@@ -1,5 +1,5 @@
-public class circulo extends  figura{
-    protected double radio;
+public class circulo extends  figura implements AccionesFiguraInterface {
+    private double radio;
 
     public circulo(String color, boolean esRelleno, double radio) {
         super(color, esRelleno);
@@ -14,13 +14,30 @@ public class circulo extends  figura{
         this.radio = radio;
     }
 
-    public  boolean obtenerPerimetro(){
+    public  double obtenerPerimetro(){
 
-        return false;
-    };
+
+    return Math.PI*radio*2; };
 
     @Override
-    public void obtenerArea() {
+    public double obtenerArea() {
 
+    return  Math.PI*Math.pow (radio,2);}
+
+    @Override
+    public void rellenar() {
+        System.out.println("relleando figuara");
+    }
+
+    @Override
+    public void duplicar() {
+        System.out.println("se ha duplicado la figura ");
+
+    }
+
+    @Override
+    public figura hacerPequenia() {
+
+        return null;
     }
 }

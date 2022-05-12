@@ -25,7 +25,11 @@ public class Main {
         //implementar de la misma forma area y perimetro
 
         //cuabdo se hereda es protected
-
+    circulo circulo= new circulo("AZUL", true, 18.7);
+        System.out.println(circulo.obtenerArea());
+        System.out.println(circulo.obtenerPerimetro());
+        circulo.duplicar();
+        circulo.rellenar();
 
     }
 
